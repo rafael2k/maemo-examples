@@ -1,2 +1,0 @@
-# maemo-examples
-Maemo examples
