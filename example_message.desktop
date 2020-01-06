@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Ex message
+Exec=/usr/bin/example_message
+X-Osso-Service=org.maemo.example_libosso
+Icon=hello

@@ -1,0 +1,8 @@
+[Desktop Entry] 
+Encoding=UTF-8
+Version=1.0
+Name=Hello World
+Comment=A control panel example applet
+Type=HildonControlPanelPlugin
+Icon=hello
+X-control-panel-plugin=libapplet.so

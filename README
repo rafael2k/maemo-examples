@@ -1,0 +1,70 @@
+This package contains examples of use Maemo environment libraries.
+ 
+example_backup_server.c
+example_backup_client.c
+	Example of using the backup-service
+example_banner.c
+	Example of using HildonBanner to present information
+example_camera.c
+	Demonstrates using the device's camera over GStreamer and saving
+	snapshot frames as jpeg-photos using GtkPixbuf
+example_color_selector.c
+	HildonColorSelector widget example
+example_context.c
+	Demonstrates how to create a context sensitive menu
+example_drawing.c
+	Demonstrates how to draw on a GtkDrawingArea using GdkPixbuf
+example_file_chooser.c
+	HildonFileChooser widget example
+example_file_details.c
+	HildonFileDetails widget example
+example_findtoolbar.c
+	HildonFileToolbar widget example
+example_font_selector.c
+	HildonFontSelector widget example
+example_gconf.c
+	Example of using GConf
+example_gnomevfs.c
+	Demonstrates manipulating files using GnomeVFS
+example_hard_keys.c
+	Example of mapping Hard Keys events
+example_hildonprogram.c
+	Example of HildonProgram usage
+example_libosso.c
+	Example of LibOSSO initialization and IPC
+example_help_framework.c
+	Example of using LibOSSO Help API
+example_menu.c
+	Example of Hildon menu
+example_message.c
+	Client LibOSSO IPC test
+example_quickstart.c
+	Simple Hello World Application
+example_toolbar.c
+	Example of useing Toolbar with HildonApp
+libapplet.c
+	Example of creating a control panel plugin
+libhello.c
+	Example of creating a status bar plugin
+
+Build
+-----
+
+To build all the examples, maemo-sdk-dev package is needed.
+
+Building maemo_examples is easy, just type:
+
+$ make
+
+You can also build them separately by typing:
+
+$ make example_name
+
+Where example_name is the source file filename without
+the .c-suffix for standalone targets and source file name
+with .c changed to .so for library targets, for example:
+
+$ make example_hildonprogram
+
+$ make libapplet.so
+

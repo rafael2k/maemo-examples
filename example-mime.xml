@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info"
+           xmlns:osso="http://nokia.com/osso/mime-categories">
+  <mime-type type="application/x-example">
+        <comment>Example application file</comment>
+        <magic priority="50">
+               <match type="string" value="FOO" offset="0"/>
+        </magic>
+        <glob pattern="*.foo"/>
+  </mime-type>
+</mime-info>

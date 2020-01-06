@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Hello, World!
+Comment=Example Home plugin
+Type=default
+X-Path=hello-world-home.so
+X-Text-Domain=test applet
+X-Multiple-Instances=false
+

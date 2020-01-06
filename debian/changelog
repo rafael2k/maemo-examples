@@ -1,0 +1,148 @@
+maemo-examples (2.0-12) unstable; urgency=low
+
+  * Added status menu example
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Thu, 09 Jul 2009 15:39:00 +0300
+
+maemo-examples (2.0-11) unstable; urgency=low
+
+  * Removed the help framework example
+  * Modified example camera to make it start on the device
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Tue, 24 Mar 2009 15:23:06 +0300
+
+maemo-examples (2.0-10) unstable; urgency=low
+
+  * New icon for libosso example
+  * Added some more desktop files
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Fri, 13 Mar 2009 10:54:06 +0300
+
+maemo-examples (2.0-9) unstable; urgency=low
+
+  * Removed some not compiling examples, some Makefile tweaks
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Mon, 02 Mar 2009 14:47:06 +0300
+
+maemo-examples (2.0-8) unstable; urgency=low
+
+  * Fix home applet, now it should be loadable and displays a dialog when
+    clicked.
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Tue, 10 Feb 2009 13:27:06 +0300
+
+maemo-examples (2.0-7) unstable; urgency=low
+
+  * Added home applet example
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Mon, 09 Feb 2009 17:54:06 +0300
+
+maemo-examples (2.0-6) unstable; urgency=low
+
+  * Added control panel plugin example
+
+ -- Marcell Lengyel <marcell.lengyel@nokia.com>  Fri, 06 Feb 2009 16:35:06 +0300
+
+maemo-examples (2.0-5) unstable; urgency=low
+
+  * Added a gconf subscribe example
+
+ -- Marcell Lengyel <marcell@maemo.org>  Wed, 08 Oct 2008 09:08:06 +0300
+
+maemo-examples (2.0-4) unstable; urgency=low
+
+  * Added a global search example
+
+ -- Marcell Lengyel <marcell@maemo.org>  Fri, 22 Aug 2008 10:08:06 +0300
+
+maemo-examples (2.0-3) unstable; urgency=low
+
+  * Updated postinstall and postrm scripts to better handle mime-type
+    assosiation
+  * Updated osso_initialize dbus names
+
+ -- Marcell Lengyel <marcell@maemo.org>  Thu, 21 Aug 2008 11:55:06 +0300
+
+maemo-examples (2.0-2) unstable; urgency=low
+
+  * Added custom mime-type example-mime.xml
+
+ -- Marcell Lengyel <marcell@maemo.org>  Mon, 17 Mar 2008 11:55:06 +0300
+
+maemo-examples (2.0-1) unstable; urgency=low
+
+  * Added example_gps and example_abook to the Makefile
+  * example_context, example_gconf and example_findtoolbar
+    updated to support testing by dogtail
+
+ -- Marcell Lengyel <marcell@maemo.org>  Thu, 17 Jan 2008 16:08:06 +0300
+
+maemo-examples (2.0-0) unstable; urgency=low
+
+  * Version bump
+  * Fixed a memory leak in color chooser example (bug# 252)
+
+ -- Marcell Lengyel <marcell@maemo.org>  Mon, 15 Oct 2007 10:18:06 +0300
+
+maemo-examples (1.6-0) unstable; urgency=low
+
+  * Removed maemo 3.x #ifdef's from the examples to clean up the code a bit
+  * Replaced Osso Help example with example_help_framework
+  * Wawlaunch example uses alsasink in X86 scratchbox and now the sounds work
+
+ -- Marcell Lengyel <marcell@maemo.org>  Sun, 16 Sep 2007 15:23:06 +0300
+
+maemo-examples (1.5-0) unstable; urgency=low
+
+  * Updated all examples to use MIT license
+  * Restructured Makefile
+  * Fixed all examples to compile without warnings
+  * Added example_common.h
+  * Added Osso Help example
+  * Added GnomeVFS example
+  * Added Drawing example
+  * Added Camera examples
+  * Added Addressbook example
+  * Added Bluetooth example
+  * Added Bluetooth lowlevel example
+  * Added Alarmd example
+  * Added Wavlaunch example
+
+ -- Jami Pekkanen <jami.pekkanen@nokia.com>  Wed,  4 Jul 2007 15:23:06 +0300
+
+maemo-examples (1.3-1) unstable; urgency=low
+
+  * Changed license text from LGPL 2.1 or later to just LGPL 2.1.
+
+ -- Maemo Integration <integration@maemo.org>  Tue,  7 Nov 2006 18:48:51 +0200
+
+maemo-examples (1.3-0) unstable; urgency=low
+
+  * Removed obsolete email interface example_email_interface example.
+
+ -- Maemo Integration <integration@maemo.org>  Mon,  2 Jan 2006 16:18:30 +0200
+
+maemo-examples (1.2-1) unstable; urgency=low
+
+  * Added context sensitive menu example.
+
+ -- Maemo Integration <integration@maemo.org>  Mon,  2 Jan 2006 16:18:28 +0200
+
+maemo-examples (1.2-0) unstable; urgency=low
+
+  * Release 1.2
+
+ -- Maemo Integration <integration@maemo.org>  Thu,  1 Dec 2005 11:22:34 +0200
+
+maemo-examples (1.1-0) unstable; urgency=low
+
+  * Examples and test for osso_email_interface.
+  * Fixes in libosso_example
+
+ -- Osvaldo Santana Neto <osvaldo.santana@indt.org.br>  Mon, 31 Oct 2005 10:19:00 -0300
+
+maemo-examples (1.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Osvaldo Santana Neto <osvaldo.santana@indt.org.br>  Tue, 27 Sep 2005 14:37:41 -0300

@@ -1,0 +1,13 @@
+Source: maemo-examples
+Section: user/other
+Priority: optional
+Maintainer: Maemo Integration <integration@maemo.org>
+Build-Depends: debhelper (>= 4.0.0), libgconf2-dev, libhildon1-dev, libhildonfm2-dev, libgtk2.0-dev, libosso-dev, libdbus-1-dev, libosso-gnomevfs2-dev, libgstreamer0.10-dev, libgwobex-dev, pulseaudio-dev, hildon-control-panel-dev, libhildondesktop1-dev, libbluetooth3-dev, libgstreamer-plugins-base0.10-dev
+Standards-Version: 3.6.0
+
+Package: maemo-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: hello-world-app
+Description: Maemo Development Examples
+ Maemo Development Examples.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ossohelpsource>
+  <folder>
+    <title>Help Framework Example</title>
+    <topic>
+      <topictitle>Main Topic</topictitle>
+      <context contextUID="osso_example_help" />
+      <para>This is a help file with example content.</para>
+    </topic>
+  </folder>
+</ossohelpsource>

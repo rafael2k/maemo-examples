@@ -1,0 +1,33 @@
+#!/bin/sh
+gtk-update-icon-cache -f  /usr/share/icons/hicolor
+if [ -d "/home/user" ]; then
+	mkdir -p /home/user/MyDocs/.example
+	echo "This file is needed by example_file_details" > /home/user/MyDocs/.example/foo.txt
+	chown user /home/user/MyDocs/.example
+	chown user /home/user/MyDocs/.example/foo.txt
+	echo "This file is used as a custom mime-type example" > /home/user/MyDocs/x-example.foo
+	chown user /home/user/MyDocs/x-example.foo
+else
+	mkdir -p $HOME/MyDocs/.example/
+	echo "This file is needed by example_file_details" > $HOME/MyDocs/.example/foo.txt
+	echo "FOO This file is used as a custom mime-type example" > $HOME/MyDocs/x-example.foo
+	
+	if [ ! -d $HOME/.pulse ]; then 
+		mkdir -p $HOME/.pulse
+	fi
+	echo "disable-shm = yes" > $HOME/.pulse/client.conf
+	echo "default-server = 127.0.0.1:4713">> $HOME/.pulse/client.conf
+
+fi
+if [ -x /usr/bin/update-mime-database ]; then
+	update-mime-database /usr/share/mime
+fi
+if [ -x /usr/bin/update-desktop-database ]; then
+	update-desktop-database /usr/share/applications
+fi
+if [ -x /usr/bin/hildon-update-category-database ]; then
+	hildon-update-category-database /usr/share/mime
+fi
+
+#DEBHELPER#
+

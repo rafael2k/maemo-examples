@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Ex Backup Server
+Exec=/usr/bin/example_backup_server
+X-Osso-Service=com.nokia.backup
+Icon=hello

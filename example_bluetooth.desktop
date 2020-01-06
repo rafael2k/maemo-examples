@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Ex Bluetooth
+Exec=/usr/bin/example_bluetooth
+Icon=hello
+X-Osso-Service=com.nokia.bt_ui
