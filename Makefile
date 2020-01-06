@@ -2,7 +2,7 @@ VERSION=2.0-9
 DESTDIR=/
 CC=gcc
 LIBRARIES=gconf-2.0 hildon-1 hildon-fm-2 gtk+-2.0 libosso gdk-2.0 gconf-2.0 gnome-vfs-2.0
-EXTRA_LIBRARIES=gstreamer-0.10 libebook-1.2 alarm bluez libgwobex osso-gpsd  osso-addressbook-1.0 gpsbt
+EXTRA_LIBRARIES=libebook-1.2 alarm bluez libgwobex osso-gpsd  osso-addressbook-1.0 gpsbt
 CFLAGS= -Wall -pedantic `pkg-config --cflags  $(LIBRARIES)`
 EXTRA_CFLAGS= -Wall -pedantic  `pkg-config --cflags $(LIBRARIES) $(EXTRA_LIBRARIES)`
 CDEBUG=-g
@@ -44,8 +44,8 @@ EXTRA_EXAMPLES=\
 	example_camera \
 	example_global_search \
 	example_gps \
-	example_wavlaunch \
 	example_alarm
+#	example_wavlaunch \
 
 LIBEXAMPLES=\
 	libapplet.so \
@@ -66,7 +66,7 @@ AUX_FILES=Makefile README README.gconf COPYING \
 	
 	
 
-all: $(EXAMPLES) $(LIBEXAMPLES) example_wavlaunch example_camera example_bluetooth
+all: $(EXAMPLES) $(LIBEXAMPLES) example_bluetooth
 
 ICON_DIR=$(DESTDIR)`pkg-config libhildondesktop-1 --variable=prefix`/share/icons/hicolor
 SM_LIB_DIR=$(DESTDIR)`pkg-config libhildondesktop-1 --variable=hildondesktoplibdir`
@@ -137,7 +137,7 @@ install_help:	example.xml
 #	    $(CC) $(EXTRA_CFLAGS) $(EXTRA_LDFLAGS) -o $@ $<
 
 $(LIBEXAMPLES): %.so: %.c
-	    $(CC) -shared  -Wall `pkg-config --cflags libhildondesktop-1` `pkg-config --libs libhildondesktop-1` -o $@ $<
+	    $(CC) -shared -fPIC  -Wall `pkg-config --cflags libhildondesktop-1` `pkg-config --libs libhildondesktop-1` -o $@ $<
 	    
 example_wavlaunch:
 	$(CC) -Wall `pkg-config --cflags $(LIBRARIES) gstreamer-0.10 libpulse-simple` `pkg-config --libs $(LIBRARIES) gstreamer-0.10 libpulse-simple` -DHAVE_PULSEAUDIO -o $@ $@.c
